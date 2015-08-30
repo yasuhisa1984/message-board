@@ -1,8 +1,9 @@
 class MessagesController < ApplicationController
   def index
-    # Messageを全て取得する。
+    # Messageを全て取得する。テーブルからすべてのレコードを取得する
      @messages = Message.all
      @message = Message.new
+     #空のインスタンスを作ることによって、エラーのメッセージが作られる。
   end
  
 ## ここから追記
